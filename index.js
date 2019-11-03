@@ -93,8 +93,16 @@ function processLastItem(stringList, callback) {
  * should return 1000.
 */
 function processSum(numberList, callback) {
-  /* CODE HERE */
+  return callback( numberList.reduce((total, state) => {
+    return total += state
+  }, 0));
 }
+
+// let sum = 0
+// for (let i = 0; i < numberList.length; i++){
+//   numberList[i] + sum
+// }
+// return sum
 
 /**
  * ### Challenge `processProduct`
