@@ -98,12 +98,6 @@ function processSum(numberList, callback) {
   }, 0));
 }
 
-// let sum = 0
-// for (let i = 0; i < numberList.length; i++){
-//   numberList[i] + sum
-// }
-// return sum
-
 /**
  * ### Challenge `processProduct`
  * 
@@ -123,7 +117,8 @@ function processSum(numberList, callback) {
  * should return 1000.
 */
 function processProduct(num1, num2, callback) {
-  /* CODE HERE */
+  const num= num1 * num2
+  return callback(num)
 }
 
 /**
@@ -150,28 +145,28 @@ function processContains(item, list, callback) {
   /* CODE HERE */
 }
 
-/**
- * ### Challenge `processDuplicateFree`
- * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
- * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
- * 
- * @instructions
- * Implement a higher-order function called `processDuplicateFree`.
- * It takes two arguments:
- * @param list array of elements of any kind.
- * @param callback function that takes an array as its argument.
- * @returns the result of invoking `callback` passing a de-duped version of `list`.
- * 
- * Examples of usage of this higher-order function:
- * [1] Invoking `processDuplicateFree` passing `[1,1,1,2]` and `(arr) => arr`,
- * should return `[1,2]`.
- * 
- * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
- * should return 3.
-*/
-function processDuplicateFree(list, callback) {
+// /**
+//  * ### Challenge `processDuplicateFree`
+//  * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
+//  * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
+//  * 
+//  * @instructions
+//  * Implement a higher-order function called `processDuplicateFree`.
+//  * It takes two arguments:
+//  * @param list array of elements of any kind.
+//  * @param callback function that takes an array as its argument.
+//  * @returns the result of invoking `callback` passing a de-duped version of `list`.
+//  * 
+//  * Examples of usage of this higher-order function:
+//  * [1] Invoking `processDuplicateFree` passing `[1,1,1,2]` and `(arr) => arr`,
+//  * should return `[1,2]`.
+//  * 
+//  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
+//  * should return 3.
+// */
+// function processDuplicateFree(list, callback) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
-}
+// }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -242,6 +237,16 @@ function tallyUpDonations(runners) {
   /* CODE HERE */
 }
 
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////////////////////////
+///////////////////////////
+/////////////////
+/////////
+//   THIS IS STRETCH BECAUSE THE CLASS HAD SUCH A HARD TIME WITH THE FIRST ASSIGNMENT
+////////////
+
+
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
 
@@ -305,7 +310,7 @@ if (typeof exports !== 'undefined') {
   if (processSum) { module.exports.processSum = processSum }
   if (processProduct) { module.exports.processProduct = processProduct }
   if (processContains) { module.exports.processContains = processContains }
-  if (processDuplicateFree) { module.exports.processDuplicateFree = processDuplicateFree }
+  // if (processDuplicateFree) { module.exports.processDuplicateFree = processDuplicateFree }
   if (getFullNames) { module.exports.getFullNames = getFullNames }
   if (firstNamesAllCaps) { module.exports.firstNamesAllCaps = firstNamesAllCaps }
   if (getRunnersByTShirtSize) { module.exports.getRunnersByTShirtSize = getRunnersByTShirtSize }
