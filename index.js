@@ -142,7 +142,24 @@ function processProduct(num1, num2, callback) {
  * should return "sad".
 */
 function processContains(item, list, callback) {
-  /* CODE HERE */
+
+
+  let isItTrue = false
+  for (let i=0; i <list.length; i++){
+    if (list[i] === item){
+      isItTrue = true
+    }
+    // return isItTrue
+  }
+  return callback(isItTrue);
+  
+  //   let isItTrue = false
+  // return callback(list.filter((isItTrue) => {
+  //   list === item
+  //   if (list === item) {
+  //     isItTrue = true
+  //   } 
+  // }))
 }
 
 // /**
@@ -187,7 +204,9 @@ function processContains(item, list, callback) {
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners) {
-  /* CODE HERE */
+  return runners.forEach(function(fullName){
+    return `${runners.last_name}, ${runners.first_name}`
+  })
 }
 
 /**
